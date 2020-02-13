@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    font-size: 20px;
+    background: lightgray;
+}
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    display: grid;
+    background-color: white;
+    grid-template-columns: 200px auto;
+    padding: 20px;
+}
+.heading{
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Sriracha', cursive;
+}
+.heading span{
+    text-align: center;
+}
+.nav, .links{
+    background-color: BlueViolet;
+    border-top: 1px solid white;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Lemonada', cursive;
+    color: white;
+
+}
+li a:hover{
+    background-color: DarkViolet;
+    color: black;
+}
+li a:active{
+    background-color: DarkMagenta;
+}
+li.linkGGTU a{
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    color: white;
+    border-right: white solid 2px;
+}
+li.linkGGTU a:hover{
+    background-color: DarkViolet;
+    color: black;
+}
+footer{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    background-color: BlueViolet;
+    position: absolute;
+    width: 100%;
+    padding-bottom: 0;
+}
+footer p{
+    padding-left: 20px;
+}
+
+.content{
+    background-color: white;
+    margin: 20px;
+    padding: 15px;
+    min-height: 559px;
+    border-radius: 10px;
+}
+.content__h1{
+    margin: 0;
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+    font-size: 70px;
+}
+.content__h3{
+    margin: 0;
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+    font-size: 50px;
+}
+.content__p{
+    padding-top: 20px;
+}
+.content p{
+    margin: 0;
+    font-size: 30px;
+}
+.content li{
+    float: none;
+    font-family: 'Lemonada', cursive;
+}
+.image__variant{
+    display: block;
+    margin: auto;
+    width: 30%;
+}
+
+
