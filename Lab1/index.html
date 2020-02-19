@@ -11,30 +11,32 @@
 <body>
     <header>
         <div class="wrapper">
-            <div>
-                <img src="images/gstu.png" alt="Здесь должен быть логотип" width="200" height="130">
-            </div>
-            <div class="heading">
-                <span>FRONT-END</span>
+            <div class="wrapper__inner">
+                <div>
+                    <img src="images/gstu.png" alt="Здесь должен быть логотип" width="200" height="130">
+                </div>
+                <div class="heading">
+                    <span>FRONT-END</span>
+                </div>
             </div>
         </div>
     </header>
     <div class="nav">
-        <ul>
-            <li><a href="">Лабораторная работа 1</a></li>
-            <li><a href="">Лабораторная работа 2</a></li>
-            <li><a href="">Лабораторная работа 3</a></li>
-            <li><a href="">Лабораторная работа 4</a></li>
-            <li><a href="">Лабораторная работа 5</a></li>
-            <li><a href="">Лабораторная работа 6</a></li>
-        </ul>
+        <div class="nav__inner">
+            <div><a href="">Лабораторная работа 1</a></div>
+            <div><a href="">Лабораторная работа 2</a></div>
+            <div><a href="">Лабораторная работа 3</a></div>
+            <div><a href="">Лабораторная работа 4</a></div>
+            <div><a href="">Лабораторная работа 5</a></div>
+            <div><a href="">Лабораторная работа 6</a></div>
+        </div>
     </div>
     <div class="links">
-        <ul>
-            <li class="linkGGTU"><a href="http://www.edu.gstu.by/">Учебный портал ГГТУ</a></li>
-            <li class="linkGGTU"><a href="https://www.gstu.by/">Официальный сайт ГГТУ</a></li>
-            <li class="linkGGTU"><a href="https://issa.gstu.by">Личный кабинет пользователя ГГТУ</a></li>
-        </ul>
+        <div class="links__inner">
+            <div><a href="http://www.edu.gstu.by/">Учебный портал ГГТУ</a></div>
+            <div><a href="https://www.gstu.by/">Официальный сайт ГГТУ</a></div>
+            <div><a href="https://issa.gstu.by">Личный кабинет пользователя ГГТУ</a></div>
+        </div>
     </div>
     <div class="content">
         <p class="content__h1">Лабораторная работа 1</p>
@@ -56,27 +58,6 @@
         <p>Разработчик: Солодков М.А</p>
         <p id="dateDocument"></p>
     </footer>
-    <script type="text/javascript">
-        function setNullFirstValue(value) {
-            if (value < 10){
-                value = '0' + value;
-            }
-            return value;
-        }
-        function currentDate() {
-            let date = new Date();
-            let day = setNullFirstValue(date.getDay());
-            let month = setNullFirstValue(date.getMonth());
-            let year = date.getFullYear();
-            let hours = setNullFirstValue(date.getHours());
-            let minutes = setNullFirstValue(date.getMinutes());
-            let seconds = setNullFirstValue(date.getSeconds());
-
-            return "Сегодня: " +day+"-"+month+"-"+year+" Текущее время: " +hours+ ":" +minutes+":" +seconds+ "";
-        }
-        setInterval(function () {
-            document.getElementById('dateDocument').innerHTML = currentDate();
-        }, 1000)
-    </script>
+    <script type="text/javascript" src="js/javaScript.js"></script>
 </body>
 </html>
