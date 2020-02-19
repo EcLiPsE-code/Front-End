@@ -1,0 +1,20 @@
+{
+  "name": "node-lab2",
+  "version": "1.0.0",
+  "description": "Node JS LAB2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev" : "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Solodkov Mikhail <fantazermyname@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
