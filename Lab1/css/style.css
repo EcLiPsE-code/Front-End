@@ -9,14 +9,14 @@ body{
 /*        HEADING
 /*=========================*/
 .wrapper{
-    padding: 20px;
+    padding: 10px;
 }
 .wrapper__inner{
     display: grid;
     background-color: white;
     grid-template-columns: 200px auto;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 20px;
 }
 .heading{
     text-align: center;
@@ -33,6 +33,7 @@ body{
     border-top: 1px solid white;
     padding: 0;
     margin: 0;
+    z-index: 10;
 }
 .nav__inner {
     display: flex;
@@ -42,6 +43,7 @@ body{
     padding: 15px;
     align-items: center;
     max-height: 72px;
+    transition: background-color .2s linear;
 }
 .nav__inner > div > a{
     font-family: 'Lemonada', cursive;
@@ -64,6 +66,7 @@ body{
     padding: 15px;
     max-height: 72px;
     border-right: 2px solid white;
+    transition: background-color .2s linear;
 }
 .links__inner > div:hover{
     background-color: DarkViolet;
@@ -81,10 +84,10 @@ body{
 /*=========================*/
 .content{
     background-color: white;
-    margin: 20px;
     padding: 15px;
-    min-height: 559px;
-    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: -10;
 }
 .content__h1{
     margin: 0;
@@ -119,7 +122,7 @@ body{
 footer p{
     padding-left: 20px;
 }
-footer{
+footer{;
     font-family: 'Lemonada', cursive;
     text-transform: uppercase;
     font-size: 20px;

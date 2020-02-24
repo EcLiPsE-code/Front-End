@@ -20,20 +20,16 @@ function currentDate() {
 setInterval(function () {
     document.getElementById('dateDocument').innerHTML = currentDate();
 }, 1000);
-let user = {
-    name : 'Tom',
-    age : 22
-};
-let user2 = {
-    isAdmin : true
-};
-let user3 = {
-    isDebil : false
-};
+let users = [
+    {id: 1, name: "Вася"},
+    {id: 2, name: "Петя"},
+    {id: 3, name: "Маша"}
+];
 
-let newUser = Object.assign(user, user2, user3);
-for(let prop in user){
-    alert(user[prop]);
-}
+let user = users.find(item => item.id == 1);
+
+alert(user.name); // Вася
+
+
 
 
