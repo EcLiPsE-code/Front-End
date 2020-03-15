@@ -4,6 +4,13 @@
     <list default="true" id="2037a1de-b75f-458d-a3c8-f05cd547fc04" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/javaScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/javaScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/public/resources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/public/images/gstu.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/public/resources/images/gstu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/public/images/logotypeDepartament.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/public/resources/images/logotypeDepartament.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/public/images/variant.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/public/resources/images/variant.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/public/js/javaScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2/public/resources/js/jsCalcCurrentDate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/public/js/javaScript_Lab2.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ОПР/OPR/Lab1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -68,6 +75,12 @@
       <workItem from="1583097909046" duration="2723000" />
       <workItem from="1583148993788" duration="723000" />
       <workItem from="1583150811500" duration="54000" />
+      <workItem from="1583312256626" duration="498000" />
+      <workItem from="1583397647392" duration="59000" />
+      <workItem from="1583582950985" duration="7387000" />
+      <workItem from="1583784560652" duration="3818000" />
+      <workItem from="1584018709229" duration="2180000" />
+      <workItem from="1584082753474" duration="34000" />
     </task>
     <servers />
   </component>
@@ -87,10 +100,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="324" y="133" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.728@0.0.1366.728" timestamp="1580587564730" />
-    <state x="462" y="106" key="FileChooserDialogImpl" timestamp="1583150863154">
+    <state x="462" y="106" key="FileChooserDialogImpl" timestamp="1584082787644">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583150863154" />
+    <state x="462" y="106" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584082787644" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1582202445262">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

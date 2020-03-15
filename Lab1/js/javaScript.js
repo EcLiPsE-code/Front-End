@@ -20,5 +20,3 @@ function currentDate() {
 setInterval(function () {
     document.getElementById('dateDocument').innerHTML = currentDate();
 }, 1000);
-
-

@@ -1,0 +1,61 @@
+
+<p class="content__h1">Лабораторная работа 3</p>
+<p class="content__h3">Вариант 1 и 3</p>
+<p><b>Задание 1: </b>Сгенерировать строку из случайных латинских букв.
+    Строку разбить на символы, каждый символ перевести в верхний регистр, собрать массив из кодов этих символов
+    ,оставить только те коды, которые не делятся на 5 и посчитать сумму их остатков деления этих кодов на 5.</p>
+<div class="tasks">
+    <div class="task1">
+        <div class="task1__data">
+            <div class="labelTask1">
+                <p>Введите количество символов: </p>
+            </div>
+            <div class="enterSizeString">
+                <label>
+                    <input type="number" id="enterSizeStringId">
+                </label>
+            </div>
+        </div>
+        <div class="task1__data">
+            <div class="labelTask1">
+                <p>Сгенерированная строка: </p>
+            </div>
+            <div class="generateString">
+                <p id="generateStringId"></p>
+            </div>
+        </div>
+        <div class="task1__result">
+            <div class="generate">
+                <input type="submit" value="СГЕНЕРИРОВАТЬ" onclick="requestGenerateString()">
+            </div>
+            <div class="resTask1">
+                <p id="resGenerate"></p>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="task2">
+        <div class="labelTask2">
+            <p><b>Задание 2: </b>Создать функцию, которая вернет: среднее арифметическое своих аргументов, среднее
+            гармоническое своих аргументов.</p>
+        </div>
+        <div class="task2__data">
+            <div class="labelTask2">
+                <p>Введите аргументы(через запятую): </p>
+            </div>
+            <div class="enterNumbers">
+                <label>
+                    <input type="text" id="enterNumbersTask2">
+                </label>
+            </div>
+        </div>
+        <div class="task2__result">
+            <div class="calculate">
+                <input type="submit" value="ВЫСЧИТАТЬ" onclick="requestCreateFunction()">
+            </div>
+            <div class="resTask2">
+                <p id="resCalc"></p>
+            </div>
+        </div>
+    </div>
+</div>

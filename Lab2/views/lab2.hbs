@@ -1,0 +1,60 @@
+
+    <p class="content__h1">Лабораторная работа 2</p>
+    <p class="content__h3">Вариант 1 и 8</p>
+    <p><b>Задание 1: </b>Ввести с клавиатуры строку и вывести второе с конца слово в этой строке.</p>
+    <div class="tasks">
+        <div class="task1">
+            <div class="task1__data">
+                <div class="labelTask1">
+                    <p>Введите строку: </p>
+                </div>
+                <div class="enterTextTask1">
+                    <label>
+                        <input type="text" id="textTask1">
+                    </label>
+                </div>
+            </div>
+            <div class="task1__result">
+                <div class="search">
+                    <input type="submit" value="ПОИСК" onclick="requestParseText()">
+                </div>
+                <div class="resTask1">
+                    <p id="resSearch"></p>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="task2">
+            <div class="labelTask2">
+                <p><b>Задание 2: </b>Подсчитать кол-во часов между 13 августа 1988 года 10:00 и 22 декабря 2033 года 17:00</p>
+            </div>
+            <div class="enterDates">
+                <div class="inputDate">
+                    <label>
+                        <label for="firstDate">Выберите первую дату: </label>
+                        <input type="date" id="firstDate" value="1988-08-13">
+                    </label>
+                    <label>
+                        <label for="firstDate">Введите время первой даты: </label>
+                        <input type="time" id="firstTime">
+                    </label>
+                </div>
+                <div class="inputDate">
+                    <label>
+                        <label for="secondDate">Выберите вторую дату: </label>
+                        <input type="date" id="secondDate" value="2033-12-22">
+                    </label>
+                    <label>
+                        <label for="firstDate">Введите время второй даты: </label>
+                        <input type="time" id="secondTime">
+                    </label>
+                </div>
+            </div>
+            <div class="calculate">
+                <input type="submit" value="РАССЧИТАТЬ" onclick="requestCalcDate()">
+            </div>
+            <div class="resultTask2">
+                <p id="resCalc"></p>
+            </div>
+        </div>
+    </div>
