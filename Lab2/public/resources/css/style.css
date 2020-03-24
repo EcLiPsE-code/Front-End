@@ -127,9 +127,6 @@ body{
     display: flex;
     align-items: center;
 }
-.task1__data > div{
-    margin-left: 20px;
-}
 .task1__data > div:first-child{
     margin-left: 0;
 }

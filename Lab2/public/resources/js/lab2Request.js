@@ -1,7 +1,8 @@
 function requestParseText() {
     let text = document.getElementById('textTask1').value;
+    let newText = text.replace(/ +/g, ' ').trim();
     let jsonText = JSON.stringify({
-        'text' : text
+        'text' : newText
     });
     let xhr = new XMLHttpRequest();
     xhr.open('POST', '/api/parser-text', true);

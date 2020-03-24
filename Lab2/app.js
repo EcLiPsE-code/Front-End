@@ -9,6 +9,7 @@ const jsonParser = express.json();
 
 const lab2 = require('./src/lab2');
 const lab3 = require('./src/lab3');
+const lab4 = require('./src/lab4');
 // устанавливаем настройки для файлов layout
 app.engine("hbs", expressHbs(
     {
@@ -64,6 +65,39 @@ apiRouter.post('/create-function', jsonParser, (req, res) => {
       'avgSum' : result.avgSum,
        'avgHarmonic' : result.avgHarmonic
    });
+});
+apiRouter.post('/create-vector', jsonParser, (req, res) => {
+   if (!req.body.X || !req.body.Y || !req.body.Z || !req.body.Name){
+       res.status(400);
+   }
+   let result = lab4.createVector(req.body.X, req.body.Y, req.body.Z, req.body.Name);
+   res.json({
+       'arrayVectors' : result
+   })
+});
+apiRouter.post('/add-vectors', jsonParser, (req, res) => {
+   if (!req.body.firstNameVector || !req.body.secondNameVector){
+       res.status(400);
+   }
+   let result = lab4.plus(req.body.firstNameVector, req.body.secondNameVector);
+   res.json({
+       'plus' : result
+   });
+});
+apiRouter.post('/scalar-vectors', jsonParser, (req, res) => {
+    if (!req.body.firstNameVector || !req.body.secondNameVector){
+        res.status(400);
+    }
+    let result = lab4.scalar(req.body.firstNameVector, req.body.secondNameVector);
+    res.json({
+        'scalar' : result
+    });
+});
+apiRouter.get('/update-table', jsonParser, (req, res) => {
+    let result = lab4.update();
+    res.json({
+       'tableValue' : result
+    });
 });
 labsRoute.use('/:id', function (request, response) {
     response.render('lab' + request.params['id'] + '.hbs');

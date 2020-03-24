@@ -1,0 +1,83 @@
+
+<p class="content__h1">Лабораторная работа 4</p>
+<p class="content__h3">Вариант 1</p>
+<p><b>Задание 1: </b>Создайте класс <em>Vector</em> для представления вектора в трехмерном пространстве (свойство для координат x, y, z). Добавтье
+ в прототип <em>Vector</em> два метода <em>plus()</em> и <em>scalar()</em> для вычисления суммы двух векторов и скалярного произведения двух векторов.
+Добавьте в прототип свойство только для чтения <em>length</em>, подсчитывающее длину вектора. Переопределите в классе <em>Vector</em> методы
+    <em>toString()</em> и <em>valueOf</em>.</p>
+<hr>
+<div class="tasks">
+    <div class="task1">
+        <div class="task1__data">
+            <div class="enterData">
+                <div class="labelTask1">
+                    <p><b>Создание вектора: </b></p>
+                </div>
+                <div class="coordinates">
+                    <label for="enterX">Введите координату X: </label>
+                    <input type="number" id="enterX">
+                </div>
+                <div class="coordinates">
+                    <label for="enterY">Введите координату Y: </label>
+                    <input type="number" id="enterY">
+                </div>
+                <div class="coordinates">
+                    <label for="enterZ">Введите координату Z: </label>
+                    <input type="number" id="enterZ">
+                </div>
+                <div class="name">
+                    <label for="enterName">Введите название вектора: </label>
+                    <input type="text" id="enterName">
+                </div>
+                <div class="createVector">
+                    <input type="submit" value="СОЗДАТЬ" onclick="createVector()">
+                    <input type="submit" value="ОБНОВИТЬ" onclick="updateTable()">
+                </div>
+            </div>
+            <div class="printData">
+                    <table>
+                        <caption>Созданные вектора</caption>
+                        <tbody id="tableBody">
+                            <tr>
+                                <th>Название</th>
+                                <th>Координата X</th>
+                                <th>Координата Y</th>
+                                <th>Координата Z</th>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+            <div class="actionWithVectors">
+                <div class="labelTask1">
+                    <p><b>Введите названия векторов, которые нужно сложить (умножить): </b></p>
+                </div>
+                <div class="enterFirstName">
+                    <label for="firstName">Введите название первого вектора: </label>
+                    <input type="text" id="firstName">
+                </div>
+                <div class="enterSecondName">
+                    <label for="secondName">Введите название второго вектора: </label>
+                    <input type="text" id="secondName">
+                </div>
+                <div class="performOperation">
+                    <input type="submit" onclick="addVectors()" value="СЛОЖИТЬ">
+                    <input type="submit" onclick="scalarVectors()" value="УМНОЖИТЬ">
+                </div>
+                <div class="printResult">
+                    <div class="sum">
+                        <label for="sumRes">Результат сложения двух векторов: </label>
+                        <p id="sumRes"></p>
+                    </div>
+                    <div class="multiply">
+                        <label for="multiplyRes">Результат умножения двух векторов: </label>
+                        <p id="multiplyRes"></p>
+                    </div>
+                    <div class="error">
+                        <label for="errorPrint"></label>
+                        <p id="errorPrint"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

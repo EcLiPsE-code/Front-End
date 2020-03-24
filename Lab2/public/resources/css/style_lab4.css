@@ -1,0 +1,195 @@
+
+.task1__data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.enterData{
+    flex-direction: column;
+}
+.performOperation{
+    display: flex;
+    flex-direction: row;
+}
+.printData{
+    flex: 1;
+    padding: 0 10px;
+}
+.task1__data> div:first-child{
+    margin-left: 0;
+}
+.task1__result{
+    margin-top: 15px;
+}
+.coordinates{
+    margin-bottom: 25px;
+}
+.name {
+    margin-bottom: 25px;
+}
+.labelTask1{
+    margin: 10px 0;
+    text-align: center;
+}
+.enterSecondName {
+    margin-top: 20px;
+}
+.performOperation > input{
+    margin: 0 20px;
+}
+.performOperation > input:first-child{
+    margin: 0;
+}
+.printResult{
+    margin-top: 20px;
+    flex-direction: column;
+}
+.coordinates > input{
+    width: 15%;
+    margin-left: 20px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.coordinates > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.labelTask1 > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.enterFirstName > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.enterSecondName > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.name > input{
+    width: 30%;
+    margin-left: 20px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.enterFirstName > input{
+    width: 30%;
+    margin-left: 20px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.enterSecondName > input {
+    width: 30%;
+    margin-left: 20px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.name > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+input[value=СОЗДАТЬ]{
+    background-color: #b527ff;
+    padding: 20px 50px;
+    align-content: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: gray 1px solid;
+    transition: background-color .05s linear;
+}
+input[value=ОБНОВИТЬ]{
+    background-color: #b527ff;
+    padding: 20px 50px;
+    align-content: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: gray 1px solid;
+    transition: background-color .05s linear;
+}
+
+input[value=СЛОЖИТЬ]{
+    background-color: #b527ff;
+    padding: 20px 50px;
+    align-content: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: gray 1px solid;
+    transition: background-color .05s linear;
+}
+input[value=УМНОЖИТЬ]{
+    background-color: #b527ff;
+    padding: 20px 50px;
+    align-content: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: gray 1px solid;
+    transition: background-color .05s linear;
+}
+input[value=СОЗДАТЬ]:hover{
+    background-color: #9f14b0;
+}
+input[value=ОБНОВИТЬ]:hover{
+    background-color: #9f14b0;
+}
+input[value=СЛОЖИТЬ]:hover{
+    background-color: #9f14b0;
+}
+input[value=УМНОЖИТЬ]:hover{
+    background-color: #9f14b0;
+}
+input[value=СОЗДАТЬ]:active{
+    background-color: #9900b0;
+}
+input[value=ОБНОВИТЬ]:active{
+    background-color: #9900b0;
+}
+input[value=УМНОЖИТЬ]:active{
+    background-color: #9900b0;
+}
+input[value=СЛОЖИТЬ]:active{
+    background-color: #9900b0;
+}
+table{
+    padding-top: 10px;
+    margin-top: 0;
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: #dddddd;
+}
