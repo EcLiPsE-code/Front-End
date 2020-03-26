@@ -1,0 +1,184 @@
+.task2__data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.text{
+    text-align: center;
+}
+.enterData{
+    margin-top: 20px;
+}
+.enterData > div{
+    margin-top: 15px;
+}
+.actionWithStudents > div{
+    margin-top: 20px;
+}
+.createStudent{
+    flex-direction: column;
+    width: 100%;
+}
+.searchLabel > input{
+    margin-left: 175px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.filtrationSpeciality > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.filtrationSpeciality > input{
+    margin-left: 10px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.searchLabel > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.enterName > input{
+    margin-left: 177px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.enterName > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.enterSurname > input{
+    margin-left: 110px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.enterSurname > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.enterLastName > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.enterLastName > input{
+    margin-left: 115px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.enterAge > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.enterAge > input{
+    margin-left: 140px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.enterSpeciality > select {
+    margin-left: 23px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.enterSpeciality > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.filtrationSpeciality > select{
+    margin-left: 11px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.printStudents > table{
+    width: 50%;
+    margin: 0 auto;
+}
+input[value=ФИЛЬТРАЦИЯ]{
+    background-color: #b527ff;
+    padding: 20px 50px;
+    align-content: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: gray 1px solid;
+    transition: background-color .05s linear;
+}
+input[value=ФИЛЬТРАЦИЯ]:hover{
+    background-color: #9f14b0;
+}
+input[value=ФИЛЬТРАЦИЯ]:active{
+    background-color: #9900b0;
+}
+input[value=УДАЛИТЬ]{
+    padding: 10px 8px;
+    background-color: #b527ff;
+    align-content: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: gray 1px solid;
+    transition: background-color .05s linear;
+}
+input[value=РЕДАКТИРОВАТЬ]{
+    padding: 10px 8px;
+    background-color: #b527ff;
+    align-content: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: gray 1px solid;
+    transition: background-color .05s linear;
+}
+input[value=УДАЛИТЬ]:hover{
+    background-color: #9f14b0;
+}
+input[value=РЕДАКТИРОВАТЬ]:hover{
+    background-color: #9f14b0;
+}
+input[value=УДАЛИТЬ]:active{
+    background-color: #9f14b0;
+}
+input[value=РЕДАКТИРОВАТЬ]:active{
+    background-color: #9f14b0;
+}

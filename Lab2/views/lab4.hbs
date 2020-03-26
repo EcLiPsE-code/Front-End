@@ -79,5 +79,89 @@
                 </div>
             </div>
         </div>
+        <hr>
+        <div class="task2__data">
+            <div class="labelTask">
+                <p><b>Задание 2:</b>Реализуйте класс Факультет, который хранит список студентов. Класс Студент содержит информацию о студенте.
+                    Создайте классы-наследники для студентов отдельных специальностей. В программе предусмотреть возможность вывода всех
+                    студентов заданной специальности и поиска студента по фамилии.</p>
+            </div>
+           <div class="createStudent">
+               <div class="text">
+                   <p><b>Создание студента</b></p>
+               </div>
+               <div class="enterData">
+                   <div class="enterName">
+                       <label for="enterNameStudent">Введите имя студента: </label>
+                       <input type="text" id="enterNameStudent">
+                   </div>
+                   <div class="enterSurname">
+                       <label for="enterSurnameStudent">Введите фамилию студента: </label>
+                       <input type="text" id="enterSurnameStudent">
+                   </div>
+                   <div class="enterLastName">
+                       <label for="enterSecondNameStudent">Введите отчество студента: </label>
+                       <input type="text" id="enterSecondNameStudent">
+                   </div>
+                   <div class="enterAge">
+                       <label for="enterAgeStudent">Введите возраст студента</label>
+                       <input type="number" id="enterAgeStudent">
+                   </div>
+                   <div class="enterSpeciality">
+                       <label for="enterSpecialityStudent">Выберите специальность студента: </label>
+                       <select id="enterSpecialityStudent">
+                           <option value="programmer">Программист</option>
+                           <option value="engineer">Инженер</option>
+                           <option value="mechanic">Механик</option>
+                           <option value="welder">Сварщик</option>
+                           <option value="powerEngineer">Энергетик</option>
+                       </select>
+                   </div>
+                   <div class="create">
+                       <input type="submit" value="СОЗДАТЬ" onclick="createStudentRequest()">
+                   </div>
+               </div>
+               <hr>
+               <div class="actionWithStudents">
+                   <div class="searchLabel">
+                       <label for="search">Введите фамилию студента: </label>
+                       <input type="text" id="search">
+                   </div>
+                   <div class="filtrationSpeciality">
+                       <label for="filter">Выберите специальность для фильтрации: </label>
+                       <select id="filter">
+                           <option value="programmer">Программист</option>
+                           <option value="engineer">Инженер</option>
+                           <option value="mechanic">Механик</option>
+                           <option value="welder">Сварщик</option>
+                           <option value="powerEngineer">Энергетик</option>
+                       </select>
+                   </div>
+                   <div class="searchStudent">
+                       <input type="submit" value="ПОИСК" onclick="searchStudent()">
+                       <input type="submit" value="ФИЛЬТРАЦИЯ" onclick="filtrationStudentBySpeciality()">
+                   </div>
+               </div>
+               <div class="printStudents">
+                   <table>
+                       <caption>Список студентов</caption>
+                       <tbody id="tableBody_task2">
+                       <tr>
+                           <th>Имя студента</th>
+                           <th>Фамилия студента</th>
+                           <th>Отчество студента</th>
+                           <th>Возраст студента</th>
+                           <th>Специальность студента</th>
+                           <th>Редактирование</th>
+                           <th>Удаление</th>
+                       </tr>
+                       </tbody>
+                   </table>
+               </div>
+               <div class="error">
+                   <p id="printError"></p>
+               </div>
+           </div>
+        </div>
     </div>
 </div>

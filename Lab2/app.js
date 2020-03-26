@@ -10,6 +10,8 @@ const jsonParser = express.json();
 const lab2 = require('./src/lab2');
 const lab3 = require('./src/lab3');
 const lab4 = require('./src/lab4');
+const lab4_task2 = require('./src/lab4_task2');
+const {Controller} = require('./src/lab4_task2');
 // устанавливаем настройки для файлов layout
 app.engine("hbs", expressHbs(
     {
@@ -20,6 +22,8 @@ app.engine("hbs", expressHbs(
 ));
 app.set("view engine", "hbs");
 app.use(express.static(__dirname + '/public'));
+
+let controller = new Controller();
 
 apiRouter.post('/parser-text', jsonParser, (req,  res) => {
     if (!req.body.text){
@@ -98,6 +102,33 @@ apiRouter.get('/update-table', jsonParser, (req, res) => {
     res.json({
        'tableValue' : result
     });
+});
+apiRouter.post('/create-student', jsonParser, (req, res) => {
+   if (!req.body.name || !req.body.surname || !req.body.lastName || !req.body.speciality || !req.body.age){
+       res.status(400);
+   }
+   let result = controller.createStudent(req.body.name, req.body.surname, req.body.age, req.body.speciality, req.body.lastName);
+   res.json({
+      listStudent : result
+   });
+});
+apiRouter.post('/search-student', jsonParser, (req, res) => {
+    if (!req.body){
+        res.status(400);
+    }
+    let result = controller.searchStudent(req.body.surname);
+    res.json({
+        'student' : result
+    });
+});
+apiRouter.post('/filter-student', jsonParser, (req, res) => {
+   if (!req.body){
+       res.status(400);
+   }
+   let result = controller.filterSpeciality(req.body.speciality);
+   res.json({
+      'students' : result
+   });
 });
 labsRoute.use('/:id', function (request, response) {
     response.render('lab' + request.params['id'] + '.hbs');

@@ -82,7 +82,6 @@ class Vector extends Point{
         };
     }
 }
-
 let arrayVectors = [];
 
 function createVector(xCoordinate, yCoordinate, zCoordinate, nameVector) {
