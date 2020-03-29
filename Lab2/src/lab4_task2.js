@@ -8,12 +8,19 @@ class Faculty{
     /*вывод студентов указанной специальности*/
     printStudentBySpeciality(nameSpeciality){
         let selectedStudents = [];
-        this.listStudents.forEach(function (value) {
-            if(value.speciality === nameSpeciality){
-                selectedStudents.push(value);
-            }
+        this.listStudents.forEach(student => {
+           if (student.speciality === nameSpeciality){
+               selectedStudents.push(student);
+           }
         });
         return selectedStudents;
+    }
+
+    updateInformationByStudent(name, surname, lastName, age, speciality){
+        let newStudent = new ConcreteSpecialityStudent(name, surname, age, speciality, lastName);
+        this.listStudents.forEach(student => {
+
+        })
     }
 
     /*поиск студента по фамилии*/
@@ -92,7 +99,7 @@ class ConcreteSpecialityStudent extends Student{
         }
     }
 }
-let listSpeciality = ['Программист', 'Инженер', 'Механик', 'Сварщик', 'Энергетик'];
+
 let faculty = new Faculty();
 class Controller {
     createStudent(name, surname, age, speciality, lastName){
@@ -105,6 +112,9 @@ class Controller {
     }
     filterSpeciality(nameSpeciality){
         return faculty.printStudentBySpeciality(nameSpeciality);
+    }
+    updateTable(){
+        return faculty.listStudents;
     }
 }
 

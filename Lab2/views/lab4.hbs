@@ -110,11 +110,11 @@
                    <div class="enterSpeciality">
                        <label for="enterSpecialityStudent">Выберите специальность студента: </label>
                        <select id="enterSpecialityStudent">
-                           <option value="programmer">Программист</option>
-                           <option value="engineer">Инженер</option>
-                           <option value="mechanic">Механик</option>
-                           <option value="welder">Сварщик</option>
-                           <option value="powerEngineer">Энергетик</option>
+                           <option value="Программист">Программист</option>
+                           <option value="Инженер">Инженер</option>
+                           <option value="Механик">Механик</option>
+                           <option value="Сварщик">Сварщик</option>
+                           <option value="Энергетик">Энергетик</option>
                        </select>
                    </div>
                    <div class="create">
@@ -130,16 +130,17 @@
                    <div class="filtrationSpeciality">
                        <label for="filter">Выберите специальность для фильтрации: </label>
                        <select id="filter">
-                           <option value="programmer">Программист</option>
-                           <option value="engineer">Инженер</option>
-                           <option value="mechanic">Механик</option>
-                           <option value="welder">Сварщик</option>
-                           <option value="powerEngineer">Энергетик</option>
+                           <option value="Программист">Программист</option>
+                           <option value="Инженер">Инженер</option>
+                           <option value="Механик">Механик</option>
+                           <option value="Сварщик">Сварщик</option>
+                           <option value="Энергетик">Энергетик</option>
                        </select>
                    </div>
                    <div class="searchStudent">
                        <input type="submit" value="ПОИСК" onclick="searchStudent()">
                        <input type="submit" value="ФИЛЬТРАЦИЯ" onclick="filtrationStudentBySpeciality()">
+                       <input type="submit" value="ОБНОВИТЬ" onclick="updateTableByStudent()">
                    </div>
                </div>
                <div class="printStudents">

@@ -97,7 +97,7 @@ apiRouter.post('/scalar-vectors', jsonParser, (req, res) => {
         'scalar' : result
     });
 });
-apiRouter.get('/update-table', jsonParser, (req, res) => {
+apiRouter.get('/update-table', (req, res) => {
     let result = lab4.update();
     res.json({
        'tableValue' : result
@@ -129,6 +129,12 @@ apiRouter.post('/filter-student', jsonParser, (req, res) => {
    res.json({
       'students' : result
    });
+});
+apiRouter.get('/update-table-students', (req, res) => {
+    let result = controller.updateTable();
+    res.json({
+        'listStudents' : result
+    });
 });
 labsRoute.use('/:id', function (request, response) {
     response.render('lab' + request.params['id'] + '.hbs');
