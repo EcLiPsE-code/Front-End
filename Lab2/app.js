@@ -113,12 +113,9 @@ apiRouter.post('/create-student', jsonParser, (req, res) => {
    });
 });
 apiRouter.post('/search-student', jsonParser, (req, res) => {
-    if (!req.body){
-        res.status(400);
-    }
     let result = controller.searchStudent(req.body.surname);
     res.json({
-        'student' : result
+        'listStudents' : result
     });
 });
 apiRouter.post('/filter-student', jsonParser, (req, res) => {
@@ -132,6 +129,39 @@ apiRouter.post('/filter-student', jsonParser, (req, res) => {
 });
 apiRouter.get('/update-table-students', (req, res) => {
     let result = controller.updateTable();
+    res.json({
+        'listStudents' : result
+    });
+});
+apiRouter.post('/create-student-lab-6', jsonParser, (req, res) => {
+   if (!req.body){
+       res.status(400);
+   }
+   let result = controller.createStudent(req.body.name, req.body.surname, req.body.age, req.body.speciality, req.body.lastName);
+   res.json({
+       'listStudents' : result
+   });
+});
+apiRouter.get('/update-table-students-lab-6', (req, res) => {
+   let result = controller.updateTable();
+   res.json({
+      'listStudents' : result
+   });
+});
+apiRouter.put('/update-data-current-student-lab6', jsonParser, (req, res) => {
+    if(!req.body){
+        res.status(400);
+    }
+    let result = controller.updateDataByStudent(req.body.currentValue, req.body.newValue);
+    res.json({
+        'listStudents' : result,
+    });
+});
+apiRouter.delete('/student-delete-lab6', jsonParser, (req, res) => {
+    if (!req.body){
+        res.status(400);
+    }
+    let result = controller.deleteStudent(req.body.currentStudent);
     res.json({
         'listStudents' : result
     });

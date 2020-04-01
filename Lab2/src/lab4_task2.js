@@ -16,23 +16,47 @@ class Faculty{
         return selectedStudents;
     }
 
-    updateInformationByStudent(name, surname, lastName, age, speciality){
-        let newStudent = new ConcreteSpecialityStudent(name, surname, age, speciality, lastName);
+    updateInformationByStudent(currentStudent, newStudent){
         this.listStudents.forEach(student => {
-
-        })
+            if (JSON.stringify(student) === currentStudent){
+                let studentObject = student.toJSON();
+                let newStudentObject = newStudent.toJSON();
+                studentObject.name = newStudentObject.name;
+                studentObject.surname = newStudentObject.surname;
+                studentObject.lastName = newStudentObject.lastName;
+                studentObject.age = newStudentObject.age;
+                studentObject.speciality = newStudentObject.speciality;
+            }
+        });
+        return this.listStudents;
     }
 
     /*поиск студента по фамилии*/
     searchStudent(surname){
-        let currentStudentIndex = this.listStudents.findIndex(student => student.surname === surname);
-        let currentStudent;
-        if (currentStudentIndex !== -1){
-            currentStudent = this.listStudents[currentStudentIndex];
-        }else{
-            return 0;
+        let foundStudents = [];
+        let currentStudentIndex = this.listStudents.forEach(student => {
+            if (student.surname.includes(surname)){
+                foundStudents.push(student);
+            }else if (surname.includes(student.surname)){
+                foundStudents.push(student);
+            }
+        });
+        return foundStudents;
+    }
+    deleteStudent(currentStudent){
+        function equalsObject(student, currentStudent){
+            let studentJSON = JSON.stringify({
+                'currentStudent' : {
+                    'currentName' : value.name,
+                    'currentSurname' : value.surname,
+                    'currentLastName' : value.lastName,
+                    'currentAge' : value.age,
+                    'currentSpeciality' : value.speciality
+                }
+            });
+            return studentJSON === currentStudent;
         }
-        return currentStudent;
+        return this.listStudents;
     }
 }
 
@@ -86,9 +110,6 @@ class ConcreteSpecialityStudent extends Student{
     get getSpeciality(){
         return this.speciality;
     }
-    set setSpeciality(recordNumber){
-        this.recordNumber = recordNumber;
-    }
     toJSON() {
         return {
             'name' : this.name,
@@ -115,6 +136,12 @@ class Controller {
     }
     updateTable(){
         return faculty.listStudents;
+    }
+    updateDataByStudent(student, newStudent){
+        return faculty.updateInformationByStudent(student, newStudent);
+    }
+    deleteStudent(currentStudent){
+        return faculty.deleteStudent(currentStudent);
     }
 }
 

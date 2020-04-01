@@ -1,0 +1,344 @@
+.task_lab6{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.task_lab6__createStudent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.task_lab6__create{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/*=========CREATE STUDENT===========*/
+.labelStudent__l6{
+    display: flex;
+    justify-content: center;
+}
+.labelStudent__l6 > span{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+/*========ввод имени студента=======*/
+.enterNameStudent__l6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.enterNameStudent__l6 > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.enterNameStudent__l6 > input{
+    margin-left: 140px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+/*=============================*/
+/*=============ввод фаимилии================*/
+.enterSurnameStudent__l6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.enterSurnameStudent__l6 > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.enterSurnameStudent__l6 > input{
+    margin-left: 140px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+/*========================*/
+/*=============ввод отчества================*/
+.enterLastNameStudent__l6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.enterLastNameStudent__l6 > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.enterLastNameStudent__l6 > input{
+    margin-left: 140px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+/*========================*/
+/*=============ввод возраста================*/
+.enterAgeStudent__l6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.enterAgeStudent__l6 > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.enterAgeStudent__l6 > input{
+    margin-left: 140px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+/*========================*/
+/*=============выбор специальности================*/
+.enterSpecialityStudent__l6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.enterSpecialityStudent__l6 > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.enterSpecialityStudent__l6 > select{
+    margin-left: 140px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+/*================================*/
+/*================================*/
+/*================================*/
+/*==============отображение текущего значения полей==================*/
+/*==============Заголовок для отображения тек. состояния==================*/
+.labelCurrentValueStudent{
+    display: flex;
+    justify-content: center;
+}
+.labelCurrentValueStudent > span{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+/*==============значение имени студента==================*/
+.currentNameStudent__l6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.currentNameStudent__l6 > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.currentNameStudent__l6 > input{
+    margin-left: 140px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+/*==============================*/
+/*==============значение фамилии студента==================*/
+.currentSurnameStudent__l6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.currentSurnameStudent__l6 > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.currentSurnameStudent__l6 > input{
+    margin-left: 140px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+/*==============================*/
+/*==============значение отчества студента==================*/
+.currentLastNameStudent__l6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.currentLastNameStudent__l6 > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.currentLastNameStudent__l6 > input{
+    margin-left: 140px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+/*==============================*/
+/*==============значение возраста студента==================*/
+.currentAgeStudent__l6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.currentAgeStudent__l6 > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.currentAgeStudent__l6 > input{
+    margin-left: 140px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+/*==============================*/
+/*==============значение специальности студента==================*/
+.currentSpecialityStudent__l6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.currentSpecialityStudent__l6 > label{
+    font-family: 'Lemonada', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.currentSpecialityStudent__l6 > input{
+    margin-left: 140px;
+    font-size: 25px;
+    font-family: 'Lemonada', cursive;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+/*==============================*/
+/*===============добавление и редактирование данных=========*/
+.actionWithStudents__l6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/*=======кнопка добавления студента======*/
+input[id=createStudentId__l6]{
+    padding: 20px 18px;
+    background-color: #b527ff;
+    align-content: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: gray 1px solid;
+    transition: background-color .05s linear;
+}
+input[id=createStudentId__l6]:active{
+    background-color: #9f14b0;
+}
+input[id=createStudentId__l6]:hover{
+    background-color: #9f14b0;
+}
+/*==============================*/
+/*=======кнопка редактирования данных о студенте======*/
+input[id=editDataStudentId__l6]{
+    padding: 20px 18px;
+    background-color: #b527ff;
+    align-content: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: gray 1px solid;
+    transition: background-color .05s linear;
+    margin-left: 15px;
+}
+input[id=editDataStudentId__l6]:active{
+    background-color: #9f14b0;
+}
+input[id=editDataStudentId__l6]:hover{
+    background-color: #9f14b0;
+}
+/*==============================*/
+/*=======кнопка редактирования данных о студенте======*/
+input[id=updateTableId__l6]{
+    padding: 20px 18px;
+    background-color: #b527ff;
+    align-content: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: gray 1px solid;
+    transition: background-color .05s linear;
+    margin-left: 15px;
+}
+input[id=updateTableId__l6]:active{
+    background-color: #9f14b0;
+}
+input[id=updateTableId__l6]:hover{
+    background-color: #9f14b0;
+}
+/*==============================*/
+/*=======отображение таблицы======*/
+.printTable{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
