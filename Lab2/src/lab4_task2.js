@@ -18,14 +18,12 @@ class Faculty{
 
     updateInformationByStudent(currentStudent, newStudent){
         this.listStudents.forEach(student => {
-            if (JSON.stringify(student) === currentStudent){
-                let studentObject = student.toJSON();
-                let newStudentObject = newStudent.toJSON();
-                studentObject.name = newStudentObject.name;
-                studentObject.surname = newStudentObject.surname;
-                studentObject.lastName = newStudentObject.lastName;
-                studentObject.age = newStudentObject.age;
-                studentObject.speciality = newStudentObject.speciality;
+            if (Student.compareObjects(student, currentStudent)){
+                student.name = newStudent.name;
+                student.surname = newStudent.surname;
+                student.lastName = newStudent.lastName;
+                student.age = newStudent.age;
+                student.speciality = newStudent.speciality;
             }
         });
         return this.listStudents;
@@ -44,18 +42,8 @@ class Faculty{
         return foundStudents;
     }
     deleteStudent(currentStudent){
-        function equalsObject(student, currentStudent){
-            let studentJSON = JSON.stringify({
-                'currentStudent' : {
-                    'currentName' : value.name,
-                    'currentSurname' : value.surname,
-                    'currentLastName' : value.lastName,
-                    'currentAge' : value.age,
-                    'currentSpeciality' : value.speciality
-                }
-            });
-            return studentJSON === currentStudent;
-        }
+        let foundStudentIndex = this.listStudents.findIndex(student => Student.compareObjects(student, currentStudent));
+        this.listStudents.splice(foundStudentIndex, 1);
         return this.listStudents;
     }
 }
@@ -97,6 +85,15 @@ class Student {
             this.age = 18;
         }
         this.age = age;
+    }
+
+    static compareObjects(object1, object2){
+        for(let key in object1){
+            if (object1[key] !== object2[key]){
+                return false;
+            }
+        }
+        return true;
     }
 }
 

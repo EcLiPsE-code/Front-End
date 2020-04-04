@@ -230,11 +230,11 @@ function updateTableByStudentLab6() {
 function updateStudentLab6() {
     let dataJSON = JSON.stringify({
         'currentValue' : {
-            'currentName' : document.getElementById('currentValueName__l6').value,
-            'currentSurname' : document.getElementById('currentValueSurname__l6').value,
-            'currentLastName' : document.getElementById('currentValueLastName__l6').value,
-            'currentAge' : document.getElementById('currentValueAge__l6').value,
-            'currentSpeciality' : document.getElementById('currentSpeciality__l6').value
+            'name' : document.getElementById('currentValueName__l6').value,
+            'surname' : document.getElementById('currentValueSurname__l6').value,
+            'lastName' : document.getElementById('currentValueLastName__l6').value,
+            'age' : document.getElementById('currentValueAge__l6').value,
+            'speciality' : document.getElementById('currentSpeciality__l6').value
         },
         'newValue' : {
             'name' : document.getElementById('enterNameId__l6').value,
@@ -330,6 +330,20 @@ function updateStudentLab6() {
                         let button = document.createElement('input');
                         button.type = 'submit';
                         button.value = 'УДАЛИТЬ';
+                        button.onclick = () => {
+                            document.getElementById('currentValueName__l6').value = xhr.response.listStudents[i].name.toString();
+                            document.getElementById('currentValueSurname__l6').value = xhr.response.listStudents[i].surname.toString();
+                            document.getElementById('currentValueLastName__l6').value = xhr.response.listStudents[i].lastName.toString();
+                            document.getElementById('currentValueAge__l6').value = xhr.response.listStudents[i].age.toString();
+                            document.getElementById('currentSpeciality__l6').value = xhr.response.listStudents[i].speciality.toString();
+
+                            let answer = confirm('Вы действительно хотите удалить данного студента?');
+                            if (answer){
+                                deleteStudent(document.getElementById('currentValueName__l6').value, document.getElementById('currentValueSurname__l6').value,
+                                    document.getElementById('currentValueLastName__l6').value, document.getElementById('currentValueAge__l6').value,
+                                    document.getElementById('currentSpeciality__l6').value)
+                            }
+                        };
                         td.appendChild(button);
                         tr.appendChild(td);
                     }
@@ -344,11 +358,11 @@ function updateStudentLab6() {
 function deleteStudent() {
     let dataJSON = JSON.stringify({
         'currentStudent' : {
-            'currentName' : document.getElementById('currentValueName__l6').value,
-            'currentSurname' : document.getElementById('currentValueSurname__l6').value,
-            'currentLastName' : document.getElementById('currentValueLastName__l6').value,
-            'currentAge' : document.getElementById('currentValueAge__l6').value,
-            'currentSpeciality' : document.getElementById('currentSpeciality__l6').value
+            'name' : document.getElementById('currentValueName__l6').value,
+            'surname' : document.getElementById('currentValueSurname__l6').value,
+            'lastName' : document.getElementById('currentValueLastName__l6').value,
+            'age' : document.getElementById('currentValueAge__l6').value,
+            'speciality' : document.getElementById('currentSpeciality__l6').value
             }
     });
     let xhr = new XMLHttpRequest();
@@ -437,6 +451,20 @@ function deleteStudent() {
                         let button = document.createElement('input');
                         button.type = 'submit';
                         button.value = 'УДАЛИТЬ';
+                        button.onclick = () => {
+                            document.getElementById('currentValueName__l6').value = xhr.response.listStudents[i].name.toString();
+                            document.getElementById('currentValueSurname__l6').value = xhr.response.listStudents[i].surname.toString();
+                            document.getElementById('currentValueLastName__l6').value = xhr.response.listStudents[i].lastName.toString();
+                            document.getElementById('currentValueAge__l6').value = xhr.response.listStudents[i].age.toString();
+                            document.getElementById('currentSpeciality__l6').value = xhr.response.listStudents[i].speciality.toString();
+
+                            let answer = confirm('Вы действительно хотите удалить данного студента?');
+                            if (answer){
+                                deleteStudent(document.getElementById('currentValueName__l6').value, document.getElementById('currentValueSurname__l6').value,
+                                    document.getElementById('currentValueLastName__l6').value, document.getElementById('currentValueAge__l6').value,
+                                    document.getElementById('currentSpeciality__l6').value)
+                            }
+                        };
                         td.appendChild(button);
                         tr.appendChild(td);
                     }
